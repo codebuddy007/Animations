@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #151f28;
+    margin-top: 160px;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.8s;
+}
+
+.front{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.image{
+    width: 90px;
+    height: 90px;
+    background: url(cb\ logo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid white;
+}
+
+.img-container{
+    border: 2px solid #3ff4f1;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.front::before{
+    content: "";
+    width: 100%;
+    background-color: #3ff1f4;
+    height: 37%;
+    position: absolute;top: 0%;
+    left: 0%;
+    z-index: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h3{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+p{
+    padding: 4px;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    background: #3ff1f4;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.flw{
+    padding: 5px 16px;
+    margin: 6px;
+}
+
+.btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: white;
+    border-radius: 10px;
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+}

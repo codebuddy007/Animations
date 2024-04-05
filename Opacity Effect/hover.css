@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    
+    margin :100px;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: rgb(60, 25, 216);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.box{
+    transition: opacity 0.6s ease;
+}
+.main:hover > :not(:hover){
+    opacity: 0.3;
+}
