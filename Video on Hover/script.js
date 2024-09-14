@@ -1,0 +1,1 @@
+Shery.hoverWithMediaCircle(".md-circle", { videos : ["0.mp4", "2.mp4", "3.mp4"]});
