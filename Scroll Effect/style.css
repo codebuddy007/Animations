@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  
+    width: 100%;
+   
+    height: 100%;
+    padding: 5vw 15vw;
+}
+#main #inner{
+    
+    margin-top: 3vw;
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+#inner #i-left{
+    height: inherit;
+    width: 45%;
+    overflow: hidden;
+}
+
+.flelm{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+#inner #i-right{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    height: inherit;
+    width: 45%;
+}
+
+#i-right .imgs{
+    width: 90%;
+    height: 90%;
+}
+
+#i-right .imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
