@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+        }
+ nav{
+    height: 50px;
+    background-color: lightseagreen;
+ }
+ #pg1{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(162, 105, 218);
+ }
+ #pg1 h1{
+    font-size: 6vw;
+    position: relative;
+    
+ }
+ .box{
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+ }
+ #pg2{
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: thistle;
+    
+ }
+ #pg2 h1{
+    font-size: 40vw;
+   
+
+ }
+ #pg3{
+    height: 100vh;
+    background-color: rgb(196, 191, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #pg3 h1{
+    font-size: 6vw;
+     
+
+ }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+    </nav>
+    <div id="pg1">
+        <h1> Horizontal Scrolling Effect</h1>
+    </div>
+    <div id="pg2">
+        <h1>EXPERIENCES</h1>
+    </div>
+    <div id="pg3">
+      <h1>Follow Code Buddy for more</h1>
+    </div>
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
